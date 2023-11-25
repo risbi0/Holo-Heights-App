@@ -9,7 +9,7 @@ function ChartLines({showChartLines, imperialConv, imageContainerHeight}) {
 				<>
 					<div
 						key={index}
-						className='group grow flex justify-evenly items-center w-full cursor-pointer text-gray-600 text-xs sm:text-base font-bold hover:text-black'
+						className='group grow flex justify-evenly items-center w-full cursor-pointer text-gray-600 text-[8px] sm:text-base font-bold hover:text-black'
 					>
 						<div>{height}</div>
 						<hr className='w-[80%] border-gray-600 border-[1px] group-hover:border-black' />
@@ -25,7 +25,7 @@ function ChartLines({showChartLines, imperialConv, imageContainerHeight}) {
 					))}
 					<div
 						key={index}
-						className='group flex justify-evenly items-center w-full h-[1px] cursor-pointer text-gray-600 text-xs sm:text-base font-bold hover:text-black'
+						className='group flex justify-evenly items-center w-full h-[1px] cursor-pointer text-gray-600 text-[8px] sm:text-base font-bold hover:text-black'
 					>
 						<div>{height}</div>
 						<hr className='w-[80%] border-gray-600 border-[1px] group-hover:border-black' />
