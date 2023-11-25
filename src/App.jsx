@@ -104,7 +104,7 @@ function App() {
 		const feet = Math.floor(inches / 12)
 		const remainingInches = Math.round(inches % 12)
 
-		return `${feet}'${remainingInches}"`
+		return remainingInches === 12 ? `${feet + 1}'0"` : `${feet}'${remainingInches}"`
 	}
 
 	useEffect(() => {
