@@ -1,0 +1,14 @@
+#sort-options input {
+	display: none;
+}
+#sort-options label:hover,
+#name-asc:checked ~ label[for="name-asc"],
+#name-desc:checked ~ label[for="name-desc"],
+#height-asc:checked ~ label[for="height-asc"],
+#height-desc:checked ~ label[for="height-desc"] {
+	background-color: #111827;
+	font-weight: bold;
+}
+#sort-options label {
+	@apply block w-24 py-2 px-4 bg-gray-600 text-center cursor-pointer border-x-2 border-y-4 [&:nth-child(2)]:border-l-4 last:border-r-4 border-gray-700 [&:nth-child(2)]:rounded-l-2xl last:rounded-r-2xl
+}

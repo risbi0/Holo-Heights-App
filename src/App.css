@@ -1,0 +1,57 @@
+.checkbox-wrapper input[type="checkbox"] {
+	visibility: hidden;
+	display: none;
+}
+.checkbox-wrapper .toggle {
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 20px;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper .toggle:before {
+	content: "";
+	position: relative;
+	top: 3px;
+	left: 3px;
+	width: 34px;
+	height: 14px;
+	display: block;
+	background: #6B7280;
+	border-radius: 8px;
+	transition: background 0.2s ease;
+}
+.checkbox-wrapper .toggle span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	display: block;
+	background: #4B5563;
+	border-radius: 10px;
+	transition: all 0.2s ease;
+}
+.checkbox-wrapper .toggle span:before {
+	content: "";
+	position: absolute;
+	display: block;
+	margin: -18px;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	transform: scale(0);
+	opacity: 1;
+	pointer-events: none;
+}
+.checkbox-wrapper #toggle-chart:checked + .toggle:before,
+.checkbox-wrapper #imperial-conv:checked + .toggle:before {
+	background: #374151;
+}
+.checkbox-wrapper #toggle-chart:checked + .toggle span,
+.checkbox-wrapper #imperial-conv:checked + .toggle span {
+	background: #111827;
+	transform: translateX(20px);
+}
