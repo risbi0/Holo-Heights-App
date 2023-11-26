@@ -122,13 +122,13 @@ function App() {
 			<div
 				ref={imageContainerRef}
 				id='image-container'
-				className='relative flex flex-col justify-between items-center h-[90%] w-[90%] sm:w-1/2 sm:ml-8 overflow-hidden bg-white border-gray-500 border-4 rounded-2xl'
+				className='relative flex flex-col justify-between items-center h-[90%] w-[90%] sm:w-3/5 sm:ml-8 overflow-hidden bg-white border-gray-500 border-4 rounded-2xl'
 			>
 				<Images selected={selected} />
 				<ChartLines showChartLines={showChartLines} imperialConv={imperialConv} imageContainerHeight={imageContainerHeight} />
 			</div>
 			{/* selection */}
-			<div className='flex flex-col items-center mt-4 sm:mt-0 sm:pt-5 w-full sm:w-1/2 h-full overflow-y-auto'>
+			<div className='flex flex-col items-center mt-4 sm:mt-0 sm:pt-5 w-full sm:w-2/5 h-full overflow-y-auto'>
 				{/* selected */}
 				{Object.entries(selected).length === 0
 					?	<div className='italic text-lg my-2 sm:mt-4'>select a member</div>
