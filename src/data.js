@@ -1,374 +1,374 @@
 export const heightData = {
 	'Airani Iofifteen': {
-		'height': 150,
-		'color': '7EDD0B'
+		height: 150,
+		color: '7EDD0B'
 	},
 	'Akai Haato': {
-		'height': 154,
-		'color': 'D90629'
+		height: 154,
+		color: 'D90629'
 	},
 	'Aki Rosenthal': {
-		'height': 162,
-		'color': 'D40680'
+		height: 162,
+		color: 'D40680'
 	},
 	'Amane Kanata': {
-		'height': 149,
-		'color': '77BFEB'
+		height: 149,
+		color: '77BFEB'
 	},
 	'Anya Melfissa': {
-		'height': 147,
-		'color': 'E79F11'
+		height: 147,
+		color: 'E79F11'
 	},
 	'Aragami Oga': {
-		'height': 192,
-		'color': 'A4FB41'
+		height: 192,
+		color: 'A4FB41'
 	},
 	'Arurandeisu': {
-		'height': 184,
-		'color': '357554'
+		height: 184,
+		color: '357554'
 	},
 	'Astel Leda': {
-		'height': 158,
-		'color': '0E53B2'
+		height: 158,
+		color: '0E53B2'
 	},
 	'Axel Syrios': {
-		'height': 184,
-		'color': 'FFA426'
+		height: 184,
+		color: 'FFA426'
 	},
 	'Ayunda Risu': {
-		'height': 153,
-		'color': 'ED8282'
+		height: 153,
+		color: 'ED8282'
 	},
 	'AZKi': {
-		'height': 158,
-		'color': 'D11C76'
+		height: 158,
+		color: 'D11C76'
 	},
 	'Banzoin Hakka': {
-		'height': 174,
-		'color': 'CFA1FC'
+		height: 174,
+		color: 'CFA1FC'
 	},
 	'Ceres Fauna': {
-		'height': 164,
-		'color': '33CA65'
+		height: 164,
+		color: '33CA65'
 	},
 	'Fuwawa Abyssgard': {
-		'height': 155,
-		'color': 'A66FEF'
+		height: 155,
+		color: 'A66FEF'
 	},
 	'Gavis Bettel': {
-		'height': 173,
-		'color': 'BE5538'
+		height: 173,
+		color: 'BE5538'
 	},
 	'Gawr Gura': {
-		'height': 141,
-		'color': '3969B2'
+		height: 141,
+		color: '3969B2'
 	},
 	'Hakos Baelz': {
-		'height': 149,
-		'color': 'FB3D29'
+		height: 149,
+		color: 'FB3D29'
 	},
 	'Hakui Koyori': {
-		'height': 153,
-		'color': 'FF68AD'
+		height: 153,
+		color: 'FF68AD'
 	},
 	'Hanasaki Miyabi': {
-		'height': 174,
-		'color': 'FF4B5A'
+		height: 174,
+		color: 'FF4B5A'
 	},
 	'Himemori Luna': {
-		'height': 140,
-		'color': 'DE6DAE'
+		height: 140,
+		color: 'DE6DAE'
 	},
 	'Hiodoshi Ao': {
-		'height': 171,
-		'color': '16264B'
+		height: 171,
+		color: '16264B'
 	},
 	'Hizaki Gamma': {
-		'height': 178,
-		'color': 'FB0D20'
+		height: 178,
+		color: 'FB0D20'
 	},
 	'Hoshimachi Suisei': {
-		'height': 160,
-		'color': '6A98D0'
+		height: 160,
+		color: '6A98D0'
 	},
 	'Houshou Marine': {
-		'height': 150,
-		'color': 'A82413'
+		height: 150,
+		color: 'A82413'
 	},
 	'Ichijou Ririka': {
-		'height': 162,
-		'color': 'EE558B'
+		height: 162,
+		color: 'EE558B'
 	},
 	'Inugami Korone': {
-		'height': 156,
-		'color': 'DCB414'
+		height: 156,
+		color: 'DCB414'
 	},
 	'IRyS': {
-		'height': 166,
-		'color': 'BC96B0'
+		height: 166,
+		color: 'BC96B0'
 	},
 	'Josuiji Shinri': {
-		'height': 183,
-		'color': 'F745AC'
+		height: 183,
+		color: 'F745AC'
 	},
 	'Juufuutei Raden': {
-		'height': 159,
-		'color': '1C5E4F'
+		height: 159,
+		color: '1C5E4F'
 	},
 	'Kaela Kovalskia': {
-		'height': 173,
-		'color': 'DC2528'
+		height: 173,
+		color: 'DC2528'
 	},
 	'Kageyama Shien': {
-		'height': 176,
-		'color': '8D69AC'
+		height: 176,
+		color: '8D69AC'
 	},
 	'Kanade Izuru': {
-		'height': 163,
-		'color': '314BB6'
+		height: 163,
+		color: '314BB6'
 	},
 	'Kazama Iroha': {
-		'height': 156,
-		'color': '45BFB6'
+		height: 156,
+		color: '45BFB6'
 	},
 	'Kiryu Coco': {
-		'height': 180,
-		'color': 'DD7212'
+		height: 180,
+		color: 'DD7212'
 	},
 	'Kishido Temma': {
-		'height': 179,
-		'color': 'EEEB39'
+		height: 179,
+		color: 'EEEB39'
 	},
 	'Kobo Kanaeru': {
-		'height': 150,
-		'color': '93BFE4'
+		height: 150,
+		color: '93BFE4'
 	},
 	'Koseki Bijou': {
-		'height': 140,
-		'color': '4B44DE'
+		height: 140,
+		color: '4B44DE'
 	},
 	'Kureiji Ollie': {
-		'height': 162,
-		'color': 'D90C52'
+		height: 162,
+		color: 'D90C52'
 	},
 	'Laplus Darknesss': {
-		'height': 139,
-		'color': '471497'
+		height: 139,
+		color: '471497'
 	},
 	'Machina X Flayon': {
-		'height': 163,
-		'color': 'E5483D'
+		height: 163,
+		color: 'E5483D'
 	},
 	'Magni Dezmond': {
-		'height': 184,
-		'color': '503C73'
+		height: 184,
+		color: '503C73'
 	},
 	'Mano Aloe': {
-		'height': 150,
-		'color': 'E5459D'
+		height: 150,
+		color: 'E5459D'
 	},
 	'Minase Rio': {
-		'height': 170,
-		'color': 'B0B5DE'
+		height: 170,
+		color: 'B0B5DE'
 	},
 	'Minato Aqua': {
-		'height': 148,
-		'color': 'FE5DD7'
+		height: 148,
+		color: 'FE5DD7'
 	},
 	'Mococo Abyssgard': {
-		'height': 155,
-		'color': 'FF7810'
+		height: 155,
+		color: 'FF7810'
 	},
 	'Momosuzu Nene': {
-		'height': 159,
-		'color': '794EBE'
+		height: 159,
+		color: '794EBE'
 	},
 	'Moona Hoshinova': {
-		'height': 165,
-		'color': 'A1030D'
+		height: 165,
+		color: 'A1030D'
 	},
 	'Mori Calliope': {
-		'height': 167,
-		'color': '8A57C1'
+		height: 167,
+		color: '8A57C1'
 	},
 	'Murasaki Shion': {
-		'height': 145,
-		'color': 'CD233A'
+		height: 145,
+		color: 'CD233A'
 	},
 	'Nakiri Ayame': {
-		'height': 152,
-		'color': 'C29371'
+		height: 152,
+		color: 'C29371'
 	},
 	'Nanashi Mumei': {
-		'height': 156,
-		'color': 'FF5506'
+		height: 156,
+		color: 'FF5506'
 	},
 	'Natsuiro Matsuri': {
-		'height': 152,
-		'color': 'BF66E8'
+		height: 152,
+		color: 'BF66E8'
 	},
 	'Nekomata Okayu': {
-		'height': 152,
-		'color': '2D3799'
+		height: 152,
+		color: '2D3799'
 	},
 	'Nerissa Ravencroft': {
-		'height': 175,
-		'color': '3F3F6A'
+		height: 175,
+		color: '3F3F6A'
 	},
 	'Ninomae Inanis': {
-		'height': 157,
-		'color': '5C6772'
+		height: 157,
+		color: '5C6772'
 	},
 	'Noir Vesper': {
-		'height': 189,
-		'color': 'AA0909'
+		height: 189,
+		color: 'AA0909'
 	},
 	'Omaru Polka': {
-		'height': 153,
-		'color': '4F5072'
+		height: 153,
+		color: '4F5072'
 	},
 	'Ookami Mio': {
-		'height': 160,
-		'color': 'BCE717'
+		height: 160,
+		color: 'BCE717'
 	},
 	'Oozora Subaru': {
-		'height': 154,
-		'color': 'F6C663'
+		height: 154,
+		color: 'F6C663'
 	},
 	'Otonose Kanade': {
-		'height': 153,
-		'color': '1B189B'
+		height: 153,
+		color: '1B189B'
 	},
 	'Ouro Kronii': {
-		'height': 168,
-		'color': '040F7F'
+		height: 168,
+		color: '040F7F'
 	},
 	'Pavolia Reine': {
-		'height': 172,
-		'color': '5DB7E6'
+		height: 172,
+		color: '5DB7E6'
 	},
 	'Regis Altare': {
-		'height': 179,
-		'color': 'F3BCC1'
+		height: 179,
+		color: 'F3BCC1'
 	},
 	'Rikka': {
-		'height': 179,
-		'color': '804F7F'
+		height: 179,
+		color: '804F7F'
 	},
 	'Robocosan': {
-		'height': 154,
-		'color': 'AB0E0C'
+		height: 154,
+		color: 'AB0E0C'
 	},
 	'Sakamata Chloe': {
-		'height': 148,
-		'color': 'FF4B74'
+		height: 148,
+		color: 'FF4B74'
 	},
 	'Sakura Miko': {
-		'height': 152,
-		'color': '8D81AE'
+		height: 152,
+		color: '8D81AE'
 	},
 	'Shiori Novella': {
-		'height': 163,
-		'color': '2BCDFF'
+		height: 163,
+		color: '2BCDFF'
 	},
 	'Shirakami Fubuki': {
-		'height': 155,
-		'color': 'DB3A11'
+		height: 155,
+		color: 'DB3A11'
 	},
 	'Shiranui Flare': {
-		'height': 158,
-		'color': '8A939E'
+		height: 158,
+		color: '8A939E'
 	},
 	'Shirogane Noel': {
-		'height': 158,
-		'color': '5FCFA7'
+		height: 158,
+		color: '5FCFA7'
 	},
 	'Shishiro Botan': {
-		'height': 166,
-		'color': 'FF511C'
+		height: 166,
+		color: 'FF511C'
 	},
 	'Takanashi Kiara': {
-		'height': 165,
-		'color': '52363E'
+		height: 165,
+		color: '52363E'
 	},
 	'Takane Lui': {
-		'height': 161,
-		'color': '9293FE'
+		height: 161,
+		color: '9293FE'
 	},
 	'Todoroki Hajime': {
-		'height': 155,
-		'color': '0146E9'
+		height: 155,
+		color: '0146E9'
 	},
 	'Tokino Sora': {
-		'height': 160,
-		'color': 'A9A2EB'
+		height: 160,
+		color: 'A9A2EB'
 	},
 	'Tokoyami Towa': {
-		'height': 150,
-		'color': 'FDB8B9'
+		height: 150,
+		color: 'FDB8B9'
 	},
 	'Tsukumo Sana': {
-		'height': 169,
-		'color': 'D783AD'
+		height: 169,
+		color: 'D783AD'
 	},
 	'Tsunomaki Watame': {
-		'height': 151,
-		'color': 'DBDB89'
+		height: 151,
+		color: 'DBDB89'
 	},
 	'Uruha Rushia': {
-		'height': 143,
-		'color': '0CE1BB'
+		height: 143,
+		color: '0CE1BB'
 	},
 	'Usada Pekora': {
-		'height': 153,
-		'color': '65BBEB'
+		height: 153,
+		color: '65BBEB'
 	},
 	'Utsugi Uyu': {
-		'height': 177,
-		'color': 'FFB657'
+		height: 177,
+		color: 'FFB657'
 	},
 	'Vestia Zeta': {
-		'height': 155,
-		'color': '98A1AC'
+		height: 155,
+		color: '98A1AC'
 	},
 	'Watson Amelia': {
-		'height': 150,
-		'color': 'F2BF3A'
+		height: 150,
+		color: 'F2BF3A'
 	},
 	'Yatogami Fuma': {
-		'height': 168,
-		'color': 'FFCC39'
+		height: 168,
+		color: 'FFCC39'
 	},
 	'Yozora Mel': {
-		'height': 154,
-		'color': 'FFC004'
+		height: 154,
+		color: 'FFC004'
 	},
 	'Yukihana Lamy': {
-		'height': 158,
-		'color': '47B4DF'
+		height: 158,
+		color: '47B4DF'
 	},
 	'Yukoku Roberu': {
-		'height': 181,
-		'color': 'FA7C0C'
+		height: 181,
+		color: 'FA7C0C'
 	},
 	'Yuzuki Choco': {
-		'height': 165,
-		'color': 'E9BB5D'
+		height: 165,
+		color: 'E9BB5D'
 	},
 	'Jurard T Rexford': {
-		'height': 181,
-		'color': '383635'
+		height: 181,
+		color: '383635'
 	},
 	'Goldbullet': {
-		'height': 190,
-		'color': '0B6464'
+		height: 190,
+		color: '0B6464'
 	},
 	'Octavio': {
-		'height': 174,
-		'color': '1C459B'
+		height: 174,
+		color: '1C459B'
 	},
 	'Crimzon Ruze': {
-		'height': 184,
-		'color': 'E70013'
+		height: 184,
+		color: 'E70013'
 	},
 }
