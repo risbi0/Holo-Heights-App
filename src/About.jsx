@@ -1,4 +1,4 @@
-function Notes() {
+function About() {
 	return (
 		<>
 			<button
@@ -69,4 +69,4 @@ function Notes() {
 	)
 }
 
-export default Notes
+export default About

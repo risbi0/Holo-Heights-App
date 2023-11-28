@@ -8,7 +8,7 @@ import Images from './Images'
 import ChartLines from './ChartLines'
 import Sort from './Sort'
 import Search from './Search'
-import Notes from './notes'
+import About from './About'
 
 function App() {
 	const imageContainerRef = useRef(null)
@@ -209,7 +209,7 @@ function App() {
 							<div>Use freedom units</div>
 						</div>
 
-						<Notes />
+						<About />
 					</div>
 
 					<Sort notSelected={notSelected} setSortedNotSelected={setSortedNotSelected} heightData={heightData} />
