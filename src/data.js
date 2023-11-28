@@ -1047,7 +1047,7 @@ export const heightData = {
 		height: 170,
 		color: 'FFDFA0'
 	},
-	'Sister Cleaire': {
+	'Sister Claire': {
 		height: 150,
 		color: 'DFC6A8'
 	},
