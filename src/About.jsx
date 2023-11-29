@@ -59,6 +59,10 @@ function About() {
 							</p>
 
 							<p>
+								An option to hide menu is availabe in desktop for a bigger canvas.
+							</p>
+
+							<p>
 								Any wrong/updated heights, updated default models, missing talents that satisfy the aforementioned conditions, contact me in Discord (username: risbiantotri).
 							</p>
 						</div>

@@ -27,6 +27,7 @@ function App() {
 	const [sortedNotSelected, setSortedNotSelected] = useState(Object.keys(notSelected).sort((a, b) => a.localeCompare(b, 'en')))
 	const [imageContainerHeight, setImgContainerHeight] = useState(0)
 	// options
+	const [toggleMenu, setToggeMenu] = useState(false)
 	const [showChartLines, setShowChartLines] = useState(true)
 	const [imperialConv, setImperialConv] = useState(false)
 	const [searchStr, setSearchStr] = useState('')
@@ -119,16 +120,22 @@ function App() {
 
   return (
     <>
+			<button
+				className='hidden sm:block absolute top-[2.5%] translate-y-[-50%] right-[1%] underline'
+				onClick={() => setToggeMenu(!toggleMenu)}
+			>
+				{toggleMenu ? 'Show' : 'Hide'} Menu
+			</button>
 			<div
 				ref={imageContainerRef}
 				id='image-container'
-				className='relative flex flex-col justify-between items-center h-[90%] w-[90%] sm:w-3/5 sm:ml-8 overflow-hidden bg-white border-gray-500 border-4 rounded-2xl'
+				className={`${toggleMenu ? 'sm:w-full sm:mr-8' : 'sm:w-3/5 sm:mr-auto'} relative flex flex-col justify-between items-center h-[90%] w-[90%] sm:ml-8 overflow-hidden bg-white border-gray-500 border-4 rounded-2xl`}
 			>
 				<Images selected={selected} />
 				<ChartLines showChartLines={showChartLines} imperialConv={imperialConv} imageContainerHeight={imageContainerHeight} />
 			</div>
 			{/* selection */}
-			<div className='flex flex-col items-center mt-4 sm:mt-0 sm:pt-5 w-full sm:w-2/5 h-full overflow-y-auto'>
+			<div className={`${toggleMenu ? 'hidden' : 'flex'} flex-col items-center mt-4 sm:mt-0 sm:pt-5 w-full sm:w-2/5 h-full overflow-y-auto`}>
 				{/* selected */}
 				{Object.entries(selected).length === 0
 					?	<div className='italic text-lg my-2 sm:mt-4'>select a member</div>
