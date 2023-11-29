@@ -12,10 +12,10 @@ function ChartLines({showChartLines, imperialConv, imageContainerHeight}) {
 						className='group grow flex justify-evenly items-center w-full cursor-pointer text-gray-600 text-[8px] sm:text-base font-bold hover:text-black'
 					>
 						<div>{height}</div>
-						<hr className='w-[80%] border-gray-600 border-[1px] group-hover:border-black' />
+						<hr className='w-[85%] border-gray-600 border-[1px] group-hover:border-black' />
 						<div>{height}</div>
 					</div>
-					<hr className='w-[80%] border-gray-500' style={index === height_intervals.length - 1 ? {'marginBottom': `${Math.round(imageContainerHeight / 46.15)}px`} : null} />
+					<hr className='w-[85%] border-gray-500' style={index === height_intervals.length - 1 ? {'marginBottom': `${Math.round(imageContainerHeight / 46.15)}px`} : null} />
 				</>
 			))}
 			{showChartLines && imperialConv && imperial_interavals.map((height, index) => (

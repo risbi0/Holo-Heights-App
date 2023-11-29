@@ -121,7 +121,7 @@ function App() {
   return (
     <>
 			<button
-				className='hidden sm:block absolute top-[2.5%] translate-y-[-50%] right-[1%] underline'
+				className='hidden sm:block absolute bottom-[2.5%] translate-y-[50%] left-8 underline'
 				onClick={() => setToggeMenu(!toggleMenu)}
 			>
 				{toggleMenu ? 'Show' : 'Hide'} Menu
