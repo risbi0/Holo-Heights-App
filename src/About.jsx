@@ -52,7 +52,7 @@ function About() {
 								Ike Eveland - Added 7 centimeters. Acquired height specifies not including the heels.
 							</p>
 							<p className='text-base leading-relaxed list-item ml-4'>
-								Mononobe Alice - Removed 15 centemers. Acquired height includes ribbons.
+								Mononobe Alice - Removed 15 centimeters. Acquired height includes ribbons.
 							</p>
 							<p className='text-base leading-relaxed list-item ml-4'>
 								Naraka - Added 6 centimeters. The other height includes shoes AND horns. No height including shoes only.
