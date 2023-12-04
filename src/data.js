@@ -56,7 +56,7 @@ export const heightData = {
 		color: 'A66FEF'
 	},
 	'Gavis Bettel': {
-		height: 173,
+		height: 180,
 		color: 'BE5538'
 	},
 	'Gawr Gura': {
@@ -248,7 +248,7 @@ export const heightData = {
 		color: '5DB7E6'
 	},
 	'Regis Altare': {
-		height: 179,
+		height: 176,
 		color: 'F3BCC1'
 	},
 	'Rikka': {
