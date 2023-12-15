@@ -711,6 +711,10 @@ export const heightData = {
 		height: 167,
 		color: 'FBAF71'
 	},
+	'Honma Himawari': {
+		height: 153,
+		color: 'FBE340'
+	},
 	'Hoshikawa Sara': {
 		height: 155,
 		color: 'FAB80D'
