@@ -1199,4 +1199,80 @@ export const heightData = {
 		height: 149,
 		color: 'FBEC5D'
 	},
+	'Aizawa Ema': {
+		height: 156,
+		color: 'FEFBD8'
+	},
+	'Asumi Sena': {
+		height: 155,
+		color: 'CDCED4'
+	},
+	'Hanabusa Lisa': {
+		height: 160,
+		color: 'B1A48F'
+	},
+	'Ichinose Uruha': {
+		height: 158,
+		color: '59526E'
+	},
+	'Kaga Nazuna': {
+		height: 154,
+		color: '544A54'
+	},
+	'Kaga Sumire': {
+		height: 154,
+		color: 'CEC2CF'
+	},
+	'Kaminari Qpi': {
+		height: 162,
+		color: 'FBDE9F'
+	},
+	'Kisaragi Ren': {
+		height: 165,
+		color: '8E2146'
+	},
+	'Kogara Toto': {
+		height: 148,
+		color: 'EADDBF'
+	},
+	'Komori Met': {
+		height: 156,
+		color: 'F3E9E1'
+	},
+	'Kurumi Noah': {
+		height: 155,
+		color: 'F0E8C6'
+	},
+	'Nekota Tsuna': {
+		height: 157,
+		color: 'ED5A6E'
+	},
+	'Shinomiya Runa': {
+		height: 147,
+		color: 'F5D5FD'
+	},
+	'Shiranami Ramune': {
+		height: 153,
+		color: '87D0DA'
+	},
+	'Tachibana Hinano': {
+		height: 154,
+		color: 'C89CA4'
+	},
+	'Tosaki Mimi': {
+		height: 148,
+		color: 'D6D2D8'
+	},
+	'Yakumo Beni': {
+		height: 158,
+		color: '73C4AB'
+	},
+	'Yano Kuromu': {
+		height: 150,
+		color: 'C9CDE9'
+	},
+	'Yumeno Akari': {
+		height: 149,
+		color: 'F99391'
+	},
 }

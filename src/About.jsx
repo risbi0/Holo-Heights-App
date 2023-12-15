@@ -31,22 +31,29 @@ function About() {
 							</button>
 						</div>
 						<div className='p-4 sm:p-5 space-y-4 overflow-y-scroll'>
-							<p>Compare Hololive and Nijisanji talents scaled to their heights. Includes ALL talents in Hololive and Nijisanji (up to November 2023) that satisfies all of the following conditions: a full body avatar with transparent background available in the sites mentioned below; and an exact height within the range of human measurement.</p>
+							<p>Compare VTuber talent avatars from Hololive, Nijisanji, and VSPO! scaled to their heights. Includes ALL talents in said agencies (up to November 2023) that satisfies all of the following conditions: a full body avatar with transparent background available in the sites mentioned below; and an exact height within the range of human measurement.</p>
+
+							<p>Height sources:</p>
+							<p className='text-base leading-relaxed list-item ml-4'>
+								Hololive - <a className="underline" href="https://hololive.hololivepro.com/en/talents/" target="_blank" rel="noreferrer">Hololive Official Website</a>, <a className="underline" href="https://holostars.hololivepro.com/talent" target="_blank" rel="noreferrer">Holostars Official Website</a>, <a className="underline" href="https://virtualyoutuber.fandom.com/wiki/Banzoin_Hakka" target="_blank" rel="noreferrer">Virtual Youtuber Wiki</a> for Banzoin Hakka&apos;s height including heels
+							</p>
+							<p className='text-base leading-relaxed list-item ml-4'>
+								Nijisanji - <a className="underline" href="https://virtualyoutuber.fandom.com/wiki/" target="_blank" rel="noreferrer">Virtual Youtuber Wiki</a>, <a className="underline" href="https://wikiwiki.jp/nijisanji/" target="_blank" rel="noreferrer">Nijisanji JP wiki</a> when no height data available in first website
+							</p>
+							<p className='text-base leading-relaxed list-item ml-4'>
+								VSPO! - <a className="underline" href="https://vspo.jp/en/member/" target="_blank" rel="noreferrer">VSPO! JP Official Website</a>
+							</p>
 
 							<p>Notes:</p>
 							<p className='text-base leading-relaxed list-item ml-4'>
 								Height is assumed to be the measure between the bottom of the soles/feet and the top of the head. Guesswork was done to some talents with obstructions on top of their head.
 							</p>
 							<p className='text-base leading-relaxed list-item ml-4'>
-								If the height has a decimal, it is rounded to the nearest whole number. Imperial conversion of heights are rounded to the nearest inch.
-							</p>
-							<p className='text-base leading-relaxed list-item ml-4'>
-								Height data for Hololive Production talents is based on the official websites for <a className="underline" href="https://hololive.hololivepro.com/en/talents/" target="_blank" rel="noreferrer">Hololive</a> and <a className="underline" href="https://holostars.hololivepro.com/talent" target="_blank" rel="noreferrer">Holostars</a>. An exception for Banzoin Hakka where I used the height that includes the shoes, which I got from <a className="underline" href="https://virtualyoutuber.fandom.com/wiki/" target="_blank" rel="noreferrer">Virtual Youtuber Wiki</a>. For Nijisanji talents, I used the same website. If there&apos;s no height displayed, I checked the <a className="underline" href="https://wikiwiki.jp/nijisanji/" target="_blank" rel="noreferrer">Nijisanji JP wiki</a> if there is one. If the height specifies including the heels/shoes, that one is used.
+								If the height has a decimal, it is rounded to the nearest whole number. Imperial conversion of heights are rounded to the nearest inch. Height specifying including the heels/shoes is preferred to use.
 							</p>
 							<p className='text-base leading-relaxed list-item ml-4'>
 								Heights of 3D avatars are less consistently represented compared to 2D since they&apos;re not standing as straight.
 							</p>
-
 							<p>The following talents are ones that I modified their height due to various reasons:</p>
 							<p className='text-base leading-relaxed list-item ml-4'>
 								Ike Eveland - Added 7 centimeters. Acquired height specifies not including the heels.
