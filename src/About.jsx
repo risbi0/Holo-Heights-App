@@ -66,7 +66,7 @@ function About() {
 							</p>
 
 							<p>
-								An option to hide menu is availabe in desktop for a bigger canvas.
+								The menu is draggable and hideable in desktop for a bigger canvas.
 							</p>
 
 							<p>

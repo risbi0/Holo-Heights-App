@@ -32,6 +32,14 @@ function App() {
 	const [imperialConv, setImperialConv] = useState(false)
 	const [searchStr, setSearchStr] = useState('')
 
+	// menu dragging
+	const selectionMenu = useRef(null)
+	const currTranslateX = useRef(0)
+	const currTranslateY = useRef(0)
+
+	const [position, setPosition] = useState({x: 0, y: 0})
+	const [isDragging, setIsDragging] = useState(false)
+
 	function getOtherZIndex(name, obj) {
 		const zIndexValues = []
 		Object.entries(obj).forEach(([n, data]) => {
@@ -108,6 +116,31 @@ function App() {
 		return remainingInches === 12 ? `${feet + 1}'0"` : `${feet}'${remainingInches}"`
 	}
 
+	function handleDragStart(e) {
+		const currTranslates = selectionMenu.current.style.transform.replaceAll(' ', '').match(/(-|\+)\d+(?=px)/g)
+		currTranslateX.current = +currTranslates[0].replace('+', '')
+		currTranslateY.current = +currTranslates[1].replace('+', '')
+
+		setPosition({
+			x: e.clientX,
+			y: e.clientY
+		})
+		setIsDragging(true)
+	}
+
+	function handleDrop(e) {
+		if (isDragging && position.x !== 0 && position.y !== 0) {
+			/* const boundingClientRect = selectionMenu.current.getBoundingClientRect()
+			console.log(
+				Math.floor(boundingClientRect.height + boundingClientRect.top) - 1 === window.innerHeight,
+				Math.floor(boundingClientRect.right) - 1 === window.innerWidth
+			); */
+			const newX = currTranslateX.current + e.clientX - position.x
+			const newY = currTranslateY.current + e.clientY - position.y
+			selectionMenu.current.style.transform = `translate(calc(-50% + ${newX}px), calc(-50% + ${newY}px))`
+		}
+	}
+
 	useEffect(() => {
     function updateImgContainerHeight () {
       const height = imageContainerRef.current.getBoundingClientRect().height
@@ -129,18 +162,30 @@ function App() {
 			<div
 				ref={imageContainerRef}
 				id='image-container'
-				className={`${toggleMenu ? 'sm:w-full sm:mr-8' : 'sm:w-3/5 sm:mr-auto'} relative flex flex-col justify-between items-center h-[90%] w-[90%] sm:ml-8 overflow-hidden bg-white border-gray-500 border-4 rounded-2xl`}
+				className='relative flex flex-col justify-between items-center h-[90%] w-[90%] sm:w-full sm:mx-8 overflow-hidden bg-white border-gray-500 border-4 rounded-2xl'
 			>
 				<Images selected={selected} />
 				<ChartLines showChartLines={showChartLines} imperialConv={imperialConv} imageContainerHeight={imageContainerHeight} />
 			</div>
 			{/* selection */}
-			<div className={`${toggleMenu ? 'hidden' : 'flex'} flex-col items-center mt-4 sm:mt-0 sm:pt-5 w-full sm:w-2/5 h-full overflow-y-auto`}>
+			<div
+				ref={selectionMenu}
+				className={`${toggleMenu ? 'hidden' : 'sm:absolute'} mt-4 sm:mt-0 sm:pr-2 w-full sm:w-2/5 h-1/2 sm:top-1/2 sm:left-1/2 sm:cursor-grab sm:z-[99999] bg-gray-800 sm:border-gray-500 sm:border-4 sm:rounded-2xl`}
+				onMouseUp={window.innerWidth >= 640 ? () => {setIsDragging(false)} : null}
+				onMouseDown={window.innerWidth >= 640 ? handleDragStart : null}
+				onMouseMove={window.innerWidth >= 640 ? handleDrop : null}
+				style={{
+					transform: window.innerWidth >= 640 ? `translate(calc(-50% + 0px), calc(-50% + 0px))` : ''
+				}}
+			>
+			<div
+				className='flex flex-col items-center w-full h-full sm:pt-5 overflow-y-auto'
+			>
 				{/* selected */}
 				{Object.entries(selected).length === 0
 					?	<div className='italic text-lg my-2 sm:mt-4'>select a member</div>
 					: <>
-						<div className='flex flex-col items-center w-[90%] sm:max-w-[600px]'>
+						<div className='flex flex-col items-center w-[90%] h-full sm:max-w-[600px]'>
 							{Object.keys(selected).map((name, index) => (
 								<div
 									key={index}
@@ -242,6 +287,7 @@ function App() {
 						</div>
 					))}
 				</div>
+			</div>
 			</div>
     </>
   )

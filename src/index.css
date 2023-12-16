@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 * {
+	user-select: none;
 	/* mozilla scrollbar */
 	scrollbar-color: #75797F #1F2937 !important;
 	scrollbar-width: thin !important;
