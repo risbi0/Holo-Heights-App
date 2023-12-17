@@ -127,6 +127,9 @@ function App() {
 	}
 
 	function startDrag(e) {
+		// don't drag on elements with events
+		if (['SPAN', 'LABEL', 'INPUT', 'BUTTON'].includes(e.target.nodeName)) return
+
 		const currTranslates = selectionMenu.current.style.transform.replaceAll(' ', '').match(/(-|\+)\d+(?=px)/g)
 		currTranslateX.current = +currTranslates[0].replace('+', '')
 		currTranslateY.current = +currTranslates[1].replace('+', '')
