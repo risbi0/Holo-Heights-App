@@ -12,7 +12,11 @@ import About from './About'
 
 function App() {
 	const imageContainerRef = useRef(null)
-
+	const [imageContainerHeight, setImgContainerHeight] = useState(0)
+	// move image
+	const selectedImages = useRef({})
+	const moveImageLoop = useRef(null)
+	// selected / not selected
 	const [selected, setSelected] = useState({})
   const [notSelected, setNotSelected] = useState(
 		Object.keys(heightData).reduce((acc, key) => {
@@ -25,18 +29,15 @@ function App() {
 		}, {})
 	)
 	const [sortedNotSelected, setSortedNotSelected] = useState(Object.keys(notSelected).sort((a, b) => a.localeCompare(b, 'en')))
-	const [imageContainerHeight, setImgContainerHeight] = useState(0)
 	// options
 	const [toggleMenu, setToggeMenu] = useState(false)
 	const [showChartLines, setShowChartLines] = useState(true)
 	const [imperialConv, setImperialConv] = useState(false)
 	const [searchStr, setSearchStr] = useState('')
-
 	// menu dragging
 	const selectionMenu = useRef(null)
 	const currTranslateX = useRef(0)
 	const currTranslateY = useRef(0)
-
 	const [position, setPosition] = useState({x: 0, y: 0})
 	const [isDragging, setIsDragging] = useState(false)
 
@@ -82,11 +83,20 @@ function App() {
 		}
   }
 
-	function moveImage(name, direction) {
-		const transformValue = selected[name]['transform']
-		const newTransformValue = +transformValue.match(/(?<=\().+(?=\))/)[0].replace('%', '')
+	function startMoveImage(name, index, direction) {
+		if (moveImageLoop.current) return
+    moveImageLoop.current = setInterval(() => {
+      const transformValue = selectedImages.current[index].style.transform
+			const newTransformValue = +transformValue.match(/(?<=\().+(?=\))/)[0].replace('%', '')
+			updateSelection(name, selected[name]['show'], false, `translateX(${newTransformValue + direction}%)`, selected[name]['zIndex'])
+    }, 10)
+	}
 
-		updateSelection(name, selected[name]['show'], false, `translateX(${newTransformValue + direction}%)`, selected[name]['zIndex'])
+	function stopMoveImage() {
+		if (moveImageLoop.current) {
+      clearInterval(moveImageLoop.current)
+      moveImageLoop.current = null
+    }
 	}
 
 	function updateZIndex(name, bringFront) {
@@ -164,7 +174,7 @@ function App() {
 				id='image-container'
 				className='relative flex flex-col justify-between items-center h-[90%] w-[90%] sm:w-full sm:mx-8 overflow-hidden bg-white border-gray-500 border-4 rounded-2xl'
 			>
-				<Images selected={selected} />
+				<Images selected={selected} selectedImages={selectedImages} />
 				<ChartLines showChartLines={showChartLines} imperialConv={imperialConv} imageContainerHeight={imageContainerHeight} />
 			</div>
 			{/* selection */}
@@ -218,13 +228,17 @@ function App() {
 											{/* move image buttons */}
 											<button
 												className='flex justify-center items-center w-7 h-7 rounded-full hover:bg-gray-300 hover:text-gray-800 duration-100'
-												onClick={() => moveImage(name, -5)}
+												onMouseDown={() => startMoveImage(name, index, -1)}
+												onMouseUp={() => stopMoveImage()}
+												onMouseLeave={() =>stopMoveImage()}
 											>
 												<span className='material-symbols-outlined'>arrow_back</span>
 											</button>
 											<button
 												className='flex justify-center items-center w-7 h-7 rounded-full hover:bg-gray-300 hover:text-gray-800 duration-100'
-												onClick={() => moveImage(name, 5)}
+												onMouseDown={() => startMoveImage(name, index, 1)}
+												onMouseUp={() => stopMoveImage()}
+												onMouseLeave={() =>stopMoveImage()}
 											>
 												<span className='material-symbols-outlined'>arrow_forward</span>
 											</button>
