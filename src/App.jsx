@@ -160,6 +160,11 @@ function App() {
     window.addEventListener('resize', updateImgContainerHeight)
     // initial update
     updateImgContainerHeight()
+
+		// switch to mobile version on tablet devices
+		const userAgent = navigator.userAgent.toLowerCase()
+		const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(userAgent)
+		if (isTablet) document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=639')
   }, [])
 
   return (
@@ -181,7 +186,7 @@ function App() {
 			{/* selection */}
 			<div
 				ref={selectionMenu}
-				className={`${toggleMenu ? 'hidden' : 'sm:absolute'} mt-4 sm:mt-0 sm:pr-2 w-full sm:w-2/5 h-1/2 sm:top-1/2 sm:left-1/2 sm:cursor-grab sm:z-[99999] bg-gray-800 sm:border-gray-500 sm:border-4 sm:rounded-2xl`}
+				className={`${toggleMenu ? 'hidden' : 'sm:absolute'} mt-4 sm:mt-0 sm:pr-2 w-full sm:w-[600px] h-1/2 sm:top-1/2 sm:left-1/2 sm:cursor-grab sm:z-[99999] bg-gray-800 sm:border-gray-500 sm:border-4 sm:rounded-2xl`}
 				onMouseUp={window.innerWidth >= 640 ? () => {setIsDragging(false)} : null}
 				onMouseDown={window.innerWidth >= 640 ? startDrag : null}
 				onMouseMove={window.innerWidth >= 640 ? handleDrag : null}
@@ -196,7 +201,7 @@ function App() {
 					{Object.entries(selected).length === 0
 						?	<div className='italic text-lg my-2 sm:mt-4'>select a member</div>
 						: <>
-							<div className='flex flex-col items-center w-[90%] h-full sm:max-w-[600px]'>
+							<div className='flex flex-col items-center w-[90%] h-max'>
 								{Object.keys(selected).map((name, index) => (
 									<div
 										key={index}
@@ -256,9 +261,9 @@ function App() {
 							</div>
 						</>
 					}
-					<hr className='w-[90%] sm:max-w-[650px] my-4 border-[1px] border-gray-300'/>
+					<hr className='w-[90%] my-4 border-[1px] border-gray-300'/>
 					{/* not selected */}
-					<div className='flex flex-col items-center w-[90%] sm:max-w-[600px]'>
+					<div className='flex flex-col items-center w-[90%]'>
 						<div className='flex flex-col sm:flex-row justify-around items-center w-full gap-2 sm:gap-0'>
 							<div className='flex items-center'>
 								<div className='checkbox-wrapper mr-2'>

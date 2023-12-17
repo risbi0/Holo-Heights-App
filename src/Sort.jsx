@@ -27,7 +27,7 @@ function Sort({notSelected, setSortedNotSelected, heightData}) {
 
 	return (
 		<>
-			<div ref={sortOptions} id='sort-options' className='flex mt-3 mx-4 w-full sm:w-auto'>
+			<div ref={sortOptions} id='sort-options' className='flex justify-center mt-3 mx-4 w-full sm:w-auto'>
 				<input
 					type='radio'
 					id='name-asc'

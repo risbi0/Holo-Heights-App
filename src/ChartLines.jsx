@@ -12,27 +12,27 @@ function ChartLines({showChartLines, imperialConv, imageContainerHeight}) {
 						className='group grow flex justify-evenly items-center w-full cursor-pointer text-gray-600 text-[8px] sm:text-base font-bold hover:text-black'
 					>
 						<div>{height}</div>
-						<hr className='w-[85%] border-gray-600 border-[1px] group-hover:border-black' />
+						<hr className='w-[85%] sm:w-[92%] border-gray-600 border-[1px] group-hover:border-black' />
 						<div>{height}</div>
 					</div>
-					<hr className='w-[85%] border-gray-500' style={index === height_intervals.length - 1 ? {'marginBottom': `${Math.round(imageContainerHeight / 46.15)}px`} : null} />
+					<hr className='w-[85%] sm:w-[92%] border-gray-500' style={index === height_intervals.length - 1 ? {'marginBottom': `${Math.round(imageContainerHeight / 46.15)}px`} : null} />
 				</>
 			))}
 			{showChartLines && imperialConv && imperial_interavals.map((height, index) => (
 				<>
 					{index === 0 && Array(3).fill(null).map((_, i) => (
-						<><hr key={i} className='w-[80%] border-gray-500' style={index === 0 && i === 0 ? {'marginTop': `${Math.round(imageContainerHeight / 60)}px`} : null} /></>
+						<><hr key={i} className='w-[85%] sm:w-[92%] border-gray-500' style={index === 0 && i === 0 ? {'marginTop': `${Math.round(imageContainerHeight / 60)}px`} : null} /></>
 					))}
 					<div
 						key={index}
 						className='group flex justify-evenly items-center w-full h-[1px] cursor-pointer text-gray-600 text-[8px] sm:text-base font-bold hover:text-black'
 					>
 						<div>{height}</div>
-						<hr className='w-[80%] border-gray-600 border-[1px] group-hover:border-black' />
+						<hr className='w-[85%] sm:w-[92%] border-gray-600 border-[1px] group-hover:border-black' />
 						<div>{height}</div>
 					</div>
 					{Array(3).fill(null).map((_, i) => (
-						<><hr key={i} className='w-[80%] border-gray-500' style={index === imperial_interavals.length - 1 && i === 2 ? {'marginBottom': `${Math.round(imageContainerHeight / 150)}px`} : null} /></>
+						<><hr key={i} className='w-[85%] sm:w-[92%] border-gray-500' style={index === imperial_interavals.length - 1 && i === 2 ? {'marginBottom': `${Math.round(imageContainerHeight / 150)}px`} : null} /></>
 					))}
 				</>
 		))}
