@@ -126,7 +126,7 @@ function App() {
 		return remainingInches === 12 ? `${feet + 1}'0"` : `${feet}'${remainingInches}"`
 	}
 
-	function handleDragStart(e) {
+	function startDrag(e) {
 		const currTranslates = selectionMenu.current.style.transform.replaceAll(' ', '').match(/(-|\+)\d+(?=px)/g)
 		currTranslateX.current = +currTranslates[0].replace('+', '')
 		currTranslateY.current = +currTranslates[1].replace('+', '')
@@ -138,9 +138,10 @@ function App() {
 		setIsDragging(true)
 	}
 
-	function handleDrop(e) {
+	function handleDrag(e) {
 		if (isDragging && position.x !== 0 && position.y !== 0) {
-			/* const boundingClientRect = selectionMenu.current.getBoundingClientRect()
+			/* note: I want to make the menu stop when it's on the edge of the browser but too lazy to figure out
+			const boundingClientRect = selectionMenu.current.getBoundingClientRect()
 			console.log(
 				Math.floor(boundingClientRect.height + boundingClientRect.top) - 1 === window.innerHeight,
 				Math.floor(boundingClientRect.right) - 1 === window.innerWidth
@@ -182,8 +183,8 @@ function App() {
 				ref={selectionMenu}
 				className={`${toggleMenu ? 'hidden' : 'sm:absolute'} mt-4 sm:mt-0 sm:pr-2 w-full sm:w-2/5 h-1/2 sm:top-1/2 sm:left-1/2 sm:cursor-grab sm:z-[99999] bg-gray-800 sm:border-gray-500 sm:border-4 sm:rounded-2xl`}
 				onMouseUp={window.innerWidth >= 640 ? () => {setIsDragging(false)} : null}
-				onMouseDown={window.innerWidth >= 640 ? handleDragStart : null}
-				onMouseMove={window.innerWidth >= 640 ? handleDrop : null}
+				onMouseDown={window.innerWidth >= 640 ? startDrag : null}
+				onMouseMove={window.innerWidth >= 640 ? handleDrag : null}
 				style={{
 					transform: window.innerWidth >= 640 ? `translate(calc(-50% + 0px), calc(-50% + 0px))` : ''
 				}}
@@ -230,7 +231,7 @@ function App() {
 												className='flex justify-center items-center w-7 h-7 rounded-full hover:bg-gray-300 hover:text-gray-800 duration-100'
 												onMouseDown={() => startMoveImage(name, index, -1)}
 												onMouseUp={() => stopMoveImage()}
-												onMouseLeave={() =>stopMoveImage()}
+												onMouseLeave={() => stopMoveImage()}
 											>
 												<span className='material-symbols-outlined'>arrow_back</span>
 											</button>
@@ -238,7 +239,7 @@ function App() {
 												className='flex justify-center items-center w-7 h-7 rounded-full hover:bg-gray-300 hover:text-gray-800 duration-100'
 												onMouseDown={() => startMoveImage(name, index, 1)}
 												onMouseUp={() => stopMoveImage()}
-												onMouseLeave={() =>stopMoveImage()}
+												onMouseLeave={() => stopMoveImage()}
 											>
 												<span className='material-symbols-outlined'>arrow_forward</span>
 											</button>
