@@ -240,6 +240,8 @@ function App() {
 												onMouseDown={() => startMoveImage(name, index, -1)}
 												onMouseUp={() => stopMoveImage()}
 												onMouseLeave={() => stopMoveImage()}
+												onTouchStart={() => startMoveImage(name, index, -1)}
+												onTouchEnd={() => stopMoveImage()}
 											>
 												<span className='material-symbols-outlined'>arrow_back</span>
 											</button>
@@ -248,6 +250,8 @@ function App() {
 												onMouseDown={() => startMoveImage(name, index, 1)}
 												onMouseUp={() => stopMoveImage()}
 												onMouseLeave={() => stopMoveImage()}
+												onTouchStart={() => startMoveImage(name, index, 1)}
+												onTouchEnd={() => stopMoveImage()}
 											>
 												<span className='material-symbols-outlined'>arrow_forward</span>
 											</button>
