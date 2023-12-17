@@ -35,7 +35,7 @@ function ChartLines({showChartLines, imperialConv, imageContainerHeight}) {
 						<><hr key={i} className='w-[85%] sm:w-[92%] border-gray-500' style={index === imperial_interavals.length - 1 && i === 2 ? {'marginBottom': `${Math.round(imageContainerHeight / 150)}px`} : null} /></>
 					))}
 				</>
-		))}
+			))}
 		</>
 	)
 }
