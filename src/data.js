@@ -1275,4 +1275,20 @@ export const heightData = {
 		height: 149,
 		color: 'F99391'
 	},
+	'Aoi Nabi': {
+		height: 159,
+		color: '4CAFFD'
+	},
+	'Iida Pochi': {
+		height: 163,
+		color: 'D4C8CD'
+	},
+	'Kagura Nana': {
+		height: 151,
+		color: 'D2D6E4'
+	},
+	'Shigure Ui': {
+		height: 149,
+		color: 'F4DAC3'
+	},
 }
