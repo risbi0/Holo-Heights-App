@@ -70,7 +70,7 @@ function About() {
 							</p>
 
 							<p>
-								Any wrong/updated heights, updated default models, missing talents that satisfy the aforementioned conditions, contact me in Discord (username: risbiantotri).
+								Any wrong/updated heights, updated default models, missing talents that satisfy the aforementioned conditions, contact me in <a className="underline" href="https://discord.com/users/431376611699458048" target="_blank" rel="noreferrer">Discord</a>.
 							</p>
 						</div>
 					</div>
