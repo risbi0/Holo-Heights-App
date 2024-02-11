@@ -1,5 +1,7 @@
 ### Holo Heights App
 
+![GitHub repo size](https://img.shields.io/github/repo-size/risbi0/Holo-Heights-App)
+
 Made in React and Tailwind. Images processed using Python.
 
 When adding new members:
