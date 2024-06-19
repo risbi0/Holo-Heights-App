@@ -71,7 +71,7 @@ function About() {
 							</p>
 
 							<p>
-								Any wrong/updated info, updated default models, or missing/new talents that satisfy the aforementioned conditions, contact me in <a className="underline" href="https://discord.com/users/431376611699458048" target="_blank" rel="noreferrer">Discord</a>.
+								Any wrong/updated info, updated default models, or missing/new talents that satisfy the aforementioned conditions, open an issue in the <a className="underline" href="https://github.com/risbi0/Holo-Heights-App" target="_blank" rel="noreferrer">repo</a>. If you want to add any vtubers that satisfy the conditions feel free to make a PR as well.
 							</p>
 						</div>
 					</div>
