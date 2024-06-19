@@ -6,12 +6,10 @@ Made in React and Tailwind. Images processed using Python.
 
 When adding new members:
 
-1.) Save image in `images/raw` folder.
+1.) Save full body avatar image in `images/raw` folder. Save avatar image in `website/public`.
 
-2.) Edit image, crop the bottom to reach the sole/feet and save.
+2.1.) Edit full body avatar image, crop from bottom until the sole/feet and overwrite save.
 
-3.) Crop the top to reach the top of head and save to `images/ref`.
+2.2.) Crop from top until the top of the head and save to `images/ref`.
 
-4.) Add the appropriate info in `data` dict in `images/script.py` and run the script.
-
-5.) Add the appropriate info in `website/src/data.js`.
+3.) Add the appropriate info in `website/src/data.js` and in the `data` dict in `images/script.py`, afterwards run the script.
