@@ -4,102 +4,102 @@ import os
 file_dir = os.path.dirname(__file__)
 
 data = {
-    # Hololive Production
-    'Airani Iofifteen': 150,
-    'Akai Haato': 154,
-    'Aki Rosenthal': 162,
-    'Amane Kanata': 149,
-    'Anya Melfissa': 147,
-    'Aragami Oga': 192,
-    'Arurandeisu': 184,
-    'Astel Leda': 158,
-    'Axel Syrios': 184,
-    'Ayunda Risu': 153,
-    'AZKi': 158,
-    'Banzoin Hakka': 174,
-    'Ceres Fauna': 164,
-    'Fuwawa Abyssgard': 155,
-    'Gavis Bettel': 180,
-    'Gawr Gura': 141,
-    'Hakos Baelz': 149,
-    'Hakui Koyori': 153,
-    'Hanasaki Miyabi': 174,
-    'Himemori Luna': 140,
-    'Hiodoshi Ao': 171,
-    'Hizaki Gamma': 178,
-    'Hoshimachi Suisei': 160,
-    'Houshou Marine': 150,
-    'Ichijou Ririka': 162,
-    'Inugami Korone': 156,
-    'IRyS': 166,
-    'Josuiji Shinri': 183,
-    'Juufuutei Raden': 159,
-    'Kaela Kovalskia': 173,
-    'Kageyama Shien': 176,
-    'Kanade Izuru': 163,
-    'Kazama Iroha': 156,
-    'Kiryu Coco': 180,
-    'Kishido Temma': 179,
-    'Kobo Kanaeru': 150,
-    'Koseki Bijou': 140,
-    'Kureiji Ollie': 162,
-    'Laplus Darknesss': 139,
-    'Machina X Flayon': 163,
-    'Magni Dezmond': 184,
-    'Mano Aloe': 150,
-    'Minase Rio': 170,
-    'Minato Aqua': 148,
-    'Mococo Abyssgard': 155,
-    'Momosuzu Nene': 159,
-    'Moona Hoshinova': 165,
-    'Mori Calliope': 167,
-    'Murasaki Shion': 145,
-    'Nakiri Ayame': 152,
-    'Nanashi Mumei': 156,
-    'Natsuiro Matsuri': 152,
-    'Nekomata Okayu': 152,
-    'Nerissa Ravencroft': 175,
-    'Ninomae Inanis': 157,
-    'Noir Vesper': 189,
-    'Omaru Polka': 153,
-    'Ookami Mio': 160,
-    'Oozora Subaru': 154,
-    'Otonose Kanade': 153,
-    'Ouro Kronii': 168,
-    'Pavolia Reine': 172,
-    'Regis Altare': 176,
-    'Rikka': 179,
-    'Robocosan': 154,
-    'Sakamata Chloe': 148,
-    'Sakura Miko': 152,
-    'Shiori Novella': 163,
-    'Shirakami Fubuki': 155,
-    'Shiranui Flare': 158,
-    'Shirogane Noel': 158,
-    'Shishiro Botan': 166,
-    'Takanashi Kiara': 165,
-    'Takane Lui': 161,
-    'Todoroki Hajime': 155,
-    'Tokino Sora': 160,
-    'Tokoyami Towa': 150,
-    'Tsukumo Sana': 169,
-    'Tsunomaki Watame': 151,
-    'Uruha Rushia': 143,
-    'Usada Pekora': 153,
-    'Utsugi Uyu': 177,
-    'Vestia Zeta': 155,
-    'Watson Amelia': 150,
-    'Yatogami Fuma': 168,
-    'Yozora Mel': 154,
-    'Yukihana Lamy': 158,
-    'Yukoku Roberu': 181,
-    'Yuzuki Choco': 165,
-    'Jurard T Rexford': 181,
-    'Goldbullet': 190,
-    'Octavio': 174,
-    'Crimzon Ruze': 184,
-    # Nijisanji
-    'Aia Amare': 158,
+	# Hololive Production
+	'Airani Iofifteen': 150,
+	'Akai Haato': 154,
+	'Aki Rosenthal': 162,
+	'Amane Kanata': 149,
+	'Anya Melfissa': 147,
+	'Aragami Oga': 192,
+	'Arurandeisu': 184,
+	'Astel Leda': 158,
+	'Axel Syrios': 184,
+	'Ayunda Risu': 153,
+	'AZKi': 158,
+	'Banzoin Hakka': 174,
+	'Ceres Fauna': 164,
+	'Fuwawa Abyssgard': 155,
+	'Gavis Bettel': 180,
+	'Gawr Gura': 141,
+	'Hakos Baelz': 149,
+	'Hakui Koyori': 153,
+	'Hanasaki Miyabi': 174,
+	'Himemori Luna': 140,
+	'Hiodoshi Ao': 171,
+	'Hizaki Gamma': 178,
+	'Hoshimachi Suisei': 160,
+	'Houshou Marine': 150,
+	'Ichijou Ririka': 162,
+	'Inugami Korone': 156,
+	'IRyS': 166,
+	'Josuiji Shinri': 183,
+	'Juufuutei Raden': 159,
+	'Kaela Kovalskia': 173,
+	'Kageyama Shien': 176,
+	'Kanade Izuru': 163,
+	'Kazama Iroha': 156,
+	'Kiryu Coco': 180,
+	'Kishido Temma': 179,
+	'Kobo Kanaeru': 150,
+	'Koseki Bijou': 140,
+	'Kureiji Ollie': 162,
+	'Laplus Darknesss': 139,
+	'Machina X Flayon': 163,
+	'Magni Dezmond': 184,
+	'Mano Aloe': 150,
+	'Minase Rio': 170,
+	'Minato Aqua': 148,
+	'Mococo Abyssgard': 155,
+	'Momosuzu Nene': 159,
+	'Moona Hoshinova': 165,
+	'Mori Calliope': 167,
+	'Murasaki Shion': 145,
+	'Nakiri Ayame': 152,
+	'Nanashi Mumei': 156,
+	'Natsuiro Matsuri': 152,
+	'Nekomata Okayu': 152,
+	'Nerissa Ravencroft': 175,
+	'Ninomae Inanis': 157,
+	'Noir Vesper': 189,
+	'Omaru Polka': 153,
+	'Ookami Mio': 160,
+	'Oozora Subaru': 154,
+	'Otonose Kanade': 153,
+	'Ouro Kronii': 168,
+	'Pavolia Reine': 172,
+	'Regis Altare': 176,
+	'Rikka': 179,
+	'Robocosan': 154,
+	'Sakamata Chloe': 148,
+	'Sakura Miko': 152,
+	'Shiori Novella': 163,
+	'Shirakami Fubuki': 155,
+	'Shiranui Flare': 158,
+	'Shirogane Noel': 158,
+	'Shishiro Botan': 166,
+	'Takanashi Kiara': 165,
+	'Takane Lui': 161,
+	'Todoroki Hajime': 155,
+	'Tokino Sora': 160,
+	'Tokoyami Towa': 150,
+	'Tsukumo Sana': 169,
+	'Tsunomaki Watame': 151,
+	'Uruha Rushia': 143,
+	'Usada Pekora': 153,
+	'Utsugi Uyu': 177,
+	'Vestia Zeta': 155,
+	'Watson Amelia': 150,
+	'Yatogami Fuma': 168,
+	'Yozora Mel': 154,
+	'Yukihana Lamy': 158,
+	'Yukoku Roberu': 181,
+	'Yuzuki Choco': 165,
+	'Jurard T Rexford': 181,
+	'Goldbullet': 190,
+	'Octavio': 174,
+	'Crimzon Ruze': 184,
+	# Nijisanji
+	'Aia Amare': 158,
 	'Alban Knox': 175,
 	'Aster Arcadia': 170,
 	'Claude Clawmark': 171,
@@ -184,7 +184,7 @@ data = {
 	'Ha Yun': 178,
 	'Hibachi Mana': 170,
 	'Higuchi Kaede': 167,
-    'Honma Himawari': 153,
+	'Honma Himawari': 153,
 	'Hoshikawa Sara': 155,
 	'Hoshirube Sho': 177,
 	'Hyakumantenbara Salome': 163,
@@ -306,8 +306,8 @@ data = {
 	'Yuki Chihiro': 138,
 	'Yuzuki Roa': 141,
 	'ZEA Cornelia': 149,
-    # VSPO!
-    'Aizawa Ema': 156,
+	# VSPO!
+	'Aizawa Ema': 156,
 	'Asumi Sena': 155,
 	'Hanabusa Lisa': 160,
 	'Ichinose Uruha': 158,
@@ -326,11 +326,11 @@ data = {
 	'Yakumo Beni': 158,
 	'Yano Kuromu': 150,
 	'Yumeno Akari': 149,
-    # mamas
-    'Aoi Nabi': 159,
-    'Iida Pochi': 163,
-    'Kagura Nana': 151,
-    'Shigure Ui': 149,
+	# mamas
+	'Aoi Nabi': 159,
+	'Iida Pochi': 163,
+	'Kagura Nana': 151,
+	'Shigure Ui': 149,
 }
 base_ref_cm = 173 # kaela
 base_ref_h = 1267 # ref version height in px
@@ -339,32 +339,32 @@ fixed_heigth_px = 1575
 fixed_width_px = 1300 # for consistent movement speed in website
 
 def main():
-    for file in os.listdir(os.path.join(file_dir, 'raw')):
-        if '.png' in file:
-            filename_list = file.replace('.', '_').split('_')
-            name_key = ' '.join(filename_list[:-1])
-            print(name_key)
-            # open images
-            img = Image.open(os.path.join(file_dir, 'raw', file))
-            ref_img = Image.open(os.path.join(file_dir, 'ref', file))
-            target_w, target_h = img.size
-            _, ref_h = ref_img.size
-            # calculate scaled heights
-            target_ref_cm = data[name_key]
-            adjusted_h = target_ref_cm / base_ref_cm * base_ref_h
-            target_h_2 = round(adjusted_h + adjusted_h / ref_h * (target_h - ref_h))
-            # resize image
-            aspect_ratio = target_w / target_h
-            width = int(target_h_2 * aspect_ratio)
-            resized_img = img.resize((width, target_h_2))
-            # add padding top, left, right
-            width, height = resized_img.size
-            padded_img = Image.new("RGBA", (fixed_width_px, fixed_heigth_px), (0, 0, 0, 0))
-            centered_x_offset = round((fixed_width_px / 2) - (width / 2))
-            top_offset = fixed_heigth_px - height
-            padded_img.paste(resized_img, (centered_x_offset, top_offset))
-            # save
-            padded_img.save(os.path.join(file_dir, 'out', file))
+	for file in os.listdir(os.path.join(file_dir, 'raw')):
+		if '.png' in file:
+			filename_list = file.replace('.', '_').split('_')
+			name_key = ' '.join(filename_list[:-1])
+			print(name_key)
+			# open images
+			img = Image.open(os.path.join(file_dir, 'raw', file))
+			ref_img = Image.open(os.path.join(file_dir, 'ref', file))
+			target_w, target_h = img.size
+			_, ref_h = ref_img.size
+			# calculate scaled heights
+			target_ref_cm = data[name_key]
+			adjusted_h = target_ref_cm / base_ref_cm * base_ref_h
+			target_h_2 = round(adjusted_h + adjusted_h / ref_h * (target_h - ref_h))
+			# resize image
+			aspect_ratio = target_w / target_h
+			width = int(target_h_2 * aspect_ratio)
+			resized_img = img.resize((width, target_h_2))
+			# add padding top, left, right
+			width, height = resized_img.size
+			padded_img = Image.new("RGBA", (fixed_width_px, fixed_heigth_px), (0, 0, 0, 0))
+			centered_x_offset = round((fixed_width_px / 2) - (width / 2))
+			top_offset = fixed_heigth_px - height
+			padded_img.paste(resized_img, (centered_x_offset, top_offset))
+			# save
+			padded_img.save(os.path.join(file_dir, 'out', file))
 
 if __name__ == '__main__':
-    main()
+	main()
