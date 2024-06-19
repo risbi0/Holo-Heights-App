@@ -47,9 +47,17 @@ export const heightData = {
 		height: 174,
 		color: 'CFA1FC'
 	},
+	'Cecilia Immergreen': {
+		height: 162,
+		color: '147A43'
+	},
 	'Ceres Fauna': {
 		height: 164,
 		color: '33CA65'
+	},
+	'Elizabeth Rose Bloodflame': {
+		height: 171,
+		color: '9B2E3A'
 	},
 	'Fuwawa Abyssgard': {
 		height: 155,
@@ -62,6 +70,10 @@ export const heightData = {
 	'Gawr Gura': {
 		height: 141,
 		color: '3969B2'
+	},
+	'Gigi Murin': {
+		height: 153,
+		color: 'CD9428'
 	},
 	'Hakos Baelz': {
 		height: 149,
@@ -246,6 +258,10 @@ export const heightData = {
 	'Pavolia Reine': {
 		height: 172,
 		color: '040F7F'
+	},
+	'Raora Panthera': {
+		height: 158,
+		color: 'E75785'
 	},
 	'Regis Altare': {
 		height: 176,
@@ -775,6 +791,10 @@ export const heightData = {
 		height: 183,
 		color: '4DD7E3'
 	},
+	'Kaisei': {
+		height: 180,
+		color: '0C6F72'
+	},
 	'Kanae': {
 		height: 175,
 		color: 'CA636C'
@@ -798,6 +818,10 @@ export const heightData = {
 	'Kitakoji Hisui': {
 		height: 153,
 		color: '38B48B'
+	},
+	'Kitami Yusei': {
+		height: 174,
+		color: 'FF6E1E'
 	},
 	'Koshimizu Toru': {
 		height: 159,
@@ -1002,6 +1026,10 @@ export const heightData = {
 	'Sakura Ritsuki': {
 		height: 165,
 		color: 'C57FC7'
+	},
+	'Sakaki Ness': {
+		height: 178,
+		color: 'C2AAE6'
 	},
 	'Sasaki Saku': {
 		height: 148,
@@ -1247,6 +1275,10 @@ export const heightData = {
 		height: 157,
 		color: 'ED5A6E'
 	},
+	'Sendo Yuuhi': {
+		height: 159,
+		color: '995F5A'
+	},
 	'Shinomiya Runa': {
 		height: 147,
 		color: 'F5D5FD'
@@ -1262,6 +1294,10 @@ export const heightData = {
 	'Tosaki Mimi': {
 		height: 148,
 		color: 'D6D2D8'
+	},
+	'Tsumugi Kokage': {
+		height: 152,
+		color: '5BA9DA'
 	},
 	'Yakumo Beni': {
 		height: 158,

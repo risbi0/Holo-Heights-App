@@ -31,7 +31,7 @@ function About() {
 							</button>
 						</div>
 						<div className='p-4 sm:p-5 space-y-4 overflow-y-scroll'>
-							<p>Compare VTuber talent avatars from Hololive, Nijisanji, and VSPO! scaled to their heights. Includes ALL talents in said agencies (up to November 2023) that satisfies all of the following conditions: a full body avatar with transparent background available in the sites mentioned below; and an exact height measurement within human range.</p>
+							<p>Compare VTuber talent avatars from Hololive, Nijisanji, and VSPO! scaled to their heights. Includes ALL talents in said agencies (up to June 2024) that satisfies all of the following conditions: a full body avatar with transparent background available in the sites mentioned below; and an exact height measurement within human range.</p>
 
 							<p>Height sources:</p>
 							<p className='text-base leading-relaxed list-item ml-4'>
