@@ -32,6 +32,7 @@ function App() {
 	// options
 	const [toggleMenu, setToggeMenu] = useState(false)
 	const [showChartLines, setShowChartLines] = useState(true)
+	const [showLabel, setShowLabel] = useState(false)
 	const [imperialConv, setImperialConv] = useState(false)
 	const [searchStr, setSearchStr] = useState('')
 	// menu dragging
@@ -183,8 +184,8 @@ function App() {
 				id='image-container'
 				className='relative flex flex-col justify-between items-center h-[90%] w-[90%] sm:w-full sm:mx-8 overflow-hidden bg-white border-gray-500 border-4 rounded-2xl'
 			>
-				<Images selected={selected} selectedImages={selectedImages} />
-				<ChartLines showChartLines={showChartLines} imperialConv={imperialConv} imageContainerHeight={imageContainerHeight} />
+				<Images selected={selected} selectedImages={selectedImages} showLabel={showLabel} imperialConv={imperialConv} imageContainerHeight={imageContainerHeight} />
+				<ChartLines showLabel={showLabel} showChartLines={showChartLines} imperialConv={imperialConv} imageContainerHeight={imageContainerHeight} />
 			</div>
 			{/* selection */}
 			<div
@@ -272,6 +273,14 @@ function App() {
 					{/* not selected */}
 					<div className='flex flex-col items-center w-[90%]'>
 						<div className='flex flex-col sm:flex-row justify-around items-center w-full gap-2 sm:gap-0'>
+							<div className='flex items-center'>
+								<div className='checkbox-wrapper mr-2'>
+									<input type='checkbox' id='label-chart' />
+									<label htmlFor='label-chart' className='toggle' onClick={() => setShowLabel(!showLabel)}><span></span></label>
+								</div>
+								<div>Show height labels</div>
+							</div>
+
 							<div className='flex items-center'>
 								<div className='checkbox-wrapper mr-2'>
 									<input type='checkbox' id='toggle-chart' />

@@ -46,10 +46,12 @@
 	opacity: 1;
 	pointer-events: none;
 }
+.checkbox-wrapper #label-chart:checked + .toggle:before,
 .checkbox-wrapper #toggle-chart:checked + .toggle:before,
 .checkbox-wrapper #imperial-conv:checked + .toggle:before {
 	background: #374151;
 }
+.checkbox-wrapper #label-chart:checked + .toggle span,
 .checkbox-wrapper #toggle-chart:checked + .toggle span,
 .checkbox-wrapper #imperial-conv:checked + .toggle span {
 	background: #111827;
