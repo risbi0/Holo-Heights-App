@@ -102,6 +102,11 @@ data = {
 	'Goldbullet': 190,
 	'Octavio': 174,
 	'Crimzon Ruze': 184,
+	'Isaki Riona': 160,
+	'Koganei Niko': 172,
+	'Mizumiya Su': 151,
+	'Rindo Chihaya': 168,
+	'Kikirara Vivi': 161,
 	# Nijisanji
 	'Aia Amare': 158,
 	'Alban Knox': 175,

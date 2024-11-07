@@ -387,6 +387,26 @@ export const heightData = {
 		height: 184,
 		color: 'E70013'
 	},
+	'Isaki Riona': {
+		height: 160,
+		color: 'C92655'
+	},
+	'Koganei Niko': {
+		height: 172,
+		color: 'F25E11'
+	},
+	'Mizumiya Su': {
+		height: 151,
+		color: '64CCE4'
+	},
+	'Rindo Chihaya': {
+		height: 168,
+		color: '2C8C8B'
+	},
+	'Kikirara Vivi': {
+		height: 161,
+		color: 'E6499B'
+	},
 	'Aia Amare': {
 		height: 158,
 		color: 'FFFEF7'
