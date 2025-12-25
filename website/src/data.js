@@ -396,7 +396,7 @@ export const heightData = {
 		color: 'F25E11'
 	},
 	'Mizumiya Su': {
-		height: 151,
+		height: 145,
 		color: '64CCE4'
 	},
 	'Rindo Chihaya': {
