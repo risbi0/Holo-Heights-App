@@ -104,7 +104,7 @@ data = {
 	'Crimzon Ruze': 184,
 	'Isaki Riona': 160,
 	'Koganei Niko': 172,
-	'Mizumiya Su': 151,
+	'Mizumiya Su': 145,
 	'Rindo Chihaya': 168,
 	'Kikirara Vivi': 161,
 	# Nijisanji
